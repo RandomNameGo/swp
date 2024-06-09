@@ -11,7 +11,7 @@ import org.hibernate.annotations.Nationalized;
 @Setter
 @Entity
 @Table(name = "user_account")
-public class UserAccount {`
+public class UserAccount {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id", nullable = false)
