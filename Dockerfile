@@ -6,6 +6,6 @@ COPY . .
 RUN mvn clean package -DskipTests
 
 FROM openjdk:17.0.2-jdk-slim
-COPY --from=build /target/project_intern-0.0.1-SNAPSHOT.jar demo.jar
+COPY --from=build /target/demoValid-0.0.1-SNAPSHOT.jar demo.jar
 EXPOSE 8090
 ENTRYPOINT ["java","-jar","demo.jar"]
